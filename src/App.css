@@ -1,0 +1,66 @@
+.App {
+  font-size: 30px;
+  font-family: cursive;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  border: solid black;
+  border-width: 5px;
+  margin-left: 0px;
+  line-height: 90px;
+  margin-top: 0px;
+}
+
+.App-logo {
+  height: 15.2vmin;
+  margin-bottom: 0px;
+  pointer-events: none;
+  top: 0px;
+  display: block;
+  left: 0px;
+}
+
+.App-header {
+  position: absolute;
+  background-color: #white;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.btm {
+  background-color: white;
+  color: black;
+  float: right;
+  margin-left: 22px;
+  top: 0px;
+  width: 280px;
+  border: 3px solid black;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.instrumentos{
+  width:  130px;
+  margin-top: 0px;
+  margin-left: 97.5px;
+  padding: 6px;
+  background-color: #white;
+  display: flex;
+  flex-direction: column;
+}
+.btn{
+  background-color: white;
+  color: black;
+  float: left;
+  margin-left: 100px;
+  top: 0px;
+  width: 280px;
+  border: 3px solid black;
+  padding: 13px;
+  background-color: white;
+}
