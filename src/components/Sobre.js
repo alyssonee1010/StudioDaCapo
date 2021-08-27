@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { BrowserRouter as Router, Route }from 'react-router-dom';
 
 function Sobre() { 
@@ -6,8 +5,9 @@ function Sobre() {
     <Router>
       <div>
         <Route path='/about' component={Sobre}>
-          <p> Studio da Capo é um studio mt loco  HAHAHAHHA TEM VARIAS PESSOAS ISSO É UM TEXTO GRANDE
-          EU NÃO SEI NEM OQUE EU TO FALANDO AHHAHAHAHAHHAH</p>
+          <div className='sobre'> 
+             STUDIO DA CAPO É UMA ESCOLA DE MÚSICA
+          </div>
         </Route>
       </div>
     </Router>

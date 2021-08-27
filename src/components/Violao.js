@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route }from 'react-router-dom';
 
-function Contato() {
+function Violao() {
   return (
     <Router>
       <div>
-        <Route path='/contact' component={Contato}>
-          <div className='sobre'> 
-             Nosso Contato: 55-95555-5555
+        <Route path='/Violao' component={Violao}>
+          <div className='instru'> 
+             
           </div>
         </Route>
       </div>
@@ -15,4 +15,4 @@ function Contato() {
   );
 }
 
-export default Contato;
+export default  Violao;
