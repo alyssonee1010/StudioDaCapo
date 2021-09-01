@@ -6,7 +6,7 @@ function Planos() {
      <Router>
       <div>
         <Route path='/plans' component={Planos}>
-          <div className='sobre'> 
+         <div id='Principais'> 
              NOSSOS PLANOS SÃO VÁRIOS
           </div>
         </Route>

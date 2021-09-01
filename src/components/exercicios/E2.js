@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route }from 'react-router-dom';
 import seminima from './figures/seminima.png';
-import claveSol from './clavesol.png';
+import claveF from './claveF.png';
 
 function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -9,35 +9,35 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let min = localStorage.getItem('minimo') ? JSON.parse(localStorage.getItem('minimo')) :  4;
-let max = localStorage.getItem('maximo') ? JSON.parse(localStorage.getItem('maximo')) :  11;
+let min = localStorage.getItem('minimoF') ? JSON.parse(localStorage.getItem('minimoF')) :  4;
+let max = localStorage.getItem('maximoF') ? JSON.parse(localStorage.getItem('maximoF')) :  11;
 
 function niveis(n) {
   if (n === 10){
-    localStorage.setItem('minimo', 4)
-    localStorage.setItem('maximo', 11)
+    localStorage.setItem('minimoF', 4)
+    localStorage.setItem('maximoF', 11)
     let score = 0
     let win = 0
-    localStorage.setItem('score', score)
-    localStorage.setItem('win', win)
+    localStorage.setItem('scoreF', score)
+    localStorage.setItem('winF', win)
     document.location.reload()
   }
   else if (n === 7){
     let score = 0
     let win = 0
-    localStorage.setItem('score', score)
-    localStorage.setItem('win', win)
-    localStorage.setItem('minimo', 0)
-    localStorage.setItem('maximo', 12)
+    localStorage.setItem('scoreF', score)
+    localStorage.setItem('winF', win)
+    localStorage.setItem('minimoF', 0)
+    localStorage.setItem('maximoF', 12)
     document.location.reload()
   }
   else if (n === 4){
-    localStorage.setItem('minimo', -3)
-    localStorage.setItem('maximo', 13)
+    localStorage.setItem('minimoF', -3)
+    localStorage.setItem('maximoF', 13)
     let score = 0
     let win = 0
-    localStorage.setItem('score', score)
-    localStorage.setItem('win', win)
+    localStorage.setItem('scoreF', score)
+    localStorage.setItem('winF', win)
     document.location.reload()
   }
 }
@@ -45,11 +45,11 @@ function niveis(n) {
 const Number = getRandomInt(min, max)
 console.log(Number)
 
-let score = localStorage.getItem('score') ? JSON.parse(localStorage.getItem('score')) : 0;
-let win = localStorage.getItem('win') ? JSON.parse(localStorage.getItem('win')) : false;
+let score = localStorage.getItem('scoreF') ? JSON.parse(localStorage.getItem('scoreF')) : 0;
+let win = localStorage.getItem('winF') ? JSON.parse(localStorage.getItem('winF')) : false;
 
 
-function E1 () {
+function E2 () {
   const [appearing, setAppering] = useState(
   {
     seminima: Number,
@@ -79,20 +79,20 @@ function E1 () {
     }
     if (appearing.seminima === n){
       score += 1
-      localStorage.setItem('score', score)
+      localStorage.setItem('scoreF', score)
       if ((score == 10) && (max === 11)){
         win = true
-        localStorage.setItem('win', win)
+        localStorage.setItem('winF', win)
         document.location.reload()
       }
       else if ((score == 15) && (max === 12)){
         win = true
-        localStorage.setItem('win', win)
+        localStorage.setItem('winF', win)
         document.location.reload()
       }
       else if ((score == 20) && (max === 13)){
         win = true
-        localStorage.setItem('win', win)
+        localStorage.setItem('winF', win)
         document.location.reload()
       }
       else {
@@ -102,8 +102,8 @@ function E1 () {
     else{
       score = 0
       win = false
-      localStorage.setItem('score', score)
-      localStorage.setItem('win', win)
+      localStorage.setItem('scoreF', score)
+      localStorage.setItem('winF', win)
       document.location.reload()
     }
   }  
@@ -117,10 +117,10 @@ function E1 () {
    const faltamScore =  ((max - 11) * 5);
    const faltam = 'Faltam ' + ((faltamScore + 10) - score);
    
-   const ClaveG = <img src={claveSol} className='ClaveG' alt= "Clave de Sol" />
+   const ClaveF = <img src={claveF} className='ClaveF' alt= "Clave de Fá" />
   return (
     <Router>
-        <Route path='/Leitura-de-partitura/E1' exact component={E1}>
+        <Route path='/Leitura-de-partitura/E2' exact component={E2}>
         <div id='dificuldadeCont'>
           <botton className='dificuldade' onClick={()=>niveis(10)}> Fácil </botton>
           <botton className='dificuldade' onClick={()=>niveis(7)}> Médio </botton>
@@ -133,7 +133,7 @@ function E1 () {
           {appearing.seminima === -2 ? <ul className='linha0'>{NotaCA3}</ul>: ""}
           {appearing.seminima === -1 ? <ul className='linha0'>{NotaCA}</ul>: ""}
            <ul className='space0'>{appearing.seminima === 0 ? Nota : ""}</ul>
-           <ul className='linha1'>{appearing.seminima === 1 ? Nota  : ""} {ClaveG}</ul>
+           <ul className='linha1'>{appearing.seminima === 1 ? Nota  : ""} {ClaveF}</ul>
            <ul className='space1'>{appearing.seminima === 2 ? Nota : ""}</ul>
            <ul className='linha2'>{appearing.seminima === 3 ? Nota : ""}</ul>
            <ul className='space2'>{appearing.seminima === 4 ? Nota : ""}</ul>
@@ -150,13 +150,13 @@ function E1 () {
           </div>
         </div>
           <div id="notasBtnCont">
-            <button className='nomeNota' onClick={()=>exercicio(4)}>Do</button>
-            <button className='nomeNota' onClick={()=>exercicio(3)}>Ré</button>
-            <button className='nomeNota' onClick={()=>exercicio(2)}>Mi</button>
-            <button className='nomeNota' onClick={()=>exercicio(1)}>Fa</button>
-            <button className='nomeNota' onClick={()=>exercicio(7)}>Sol</button>
-            <button className='nomeNota' onClick={()=>exercicio(6)}>La</button>
-            <button className='nomeNota' onClick={()=>exercicio(5)}>Si</button>
+            <button className='nomeNota' onClick={()=>exercicio(6)}>Do</button>
+            <button className='nomeNota' onClick={()=>exercicio(5)}>Ré</button>
+            <button className='nomeNota' onClick={()=>exercicio(4)}>Mi</button>
+            <button className='nomeNota' onClick={()=>exercicio(3)}>Fa</button>
+            <button className='nomeNota' onClick={()=>exercicio(2)}>Sol</button>
+            <button className='nomeNota' onClick={()=>exercicio(1)}>La</button>
+            <button className='nomeNota' onClick={()=>exercicio(7)}>Si</button>
           </div>
           <div id="barraCont">
             <div className='barra' style={{width: porcentagem}}></div>
@@ -169,4 +169,4 @@ function E1 () {
   );
 }
 
-export default E1;
+export default E2;

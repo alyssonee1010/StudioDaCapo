@@ -5,7 +5,7 @@ function Sobre() {
     <Router>
       <div>
         <Route path='/about' component={Sobre}>
-          <div className='sobre'> 
+          <div id='Principais'> 
              STUDIO DA CAPO É UMA ESCOLA DE MÚSICA
           </div>
         </Route>

@@ -123,50 +123,110 @@ main{
   transition: background-color .2s ease, transform .2s ease;
   cursor: pointer;
 }
-.sobre{
-  border-radius: 5px;
+#Principais{
   position: absolute;
-  left: 10%;
-  right:1%;
-  top: 10%;
-  border: solid black;
-  border-width: 5px;
-  padding: 19.1%;
+  width: calc(100% - 4em);
+  left: 50%;
+  top: calc(50% - 1.5em);
+  background-color: #fff;
+  box-shadow: 8px 5px 10px #cccccc;
+  padding: 4em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  transform: translate(-50%,-50%);
+  display: inline-flex;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+
+}
+h1{
+  font-family: sans-serif;
+  font-size: 2em;
+  color:var(--colorC)
+}
+.numeros{
+  width: fit-content;
+  position: relative;
+}
+cont{
+  left: 5em;
+  display: block;
+  color: var(--color);
+}
+.email{
+  position: relative;
+  width: fit-content;
+  left: 2em;
 }
 .instru{
   font-family: sans-serif;
   font-size: 100%;
   float: center;
 }
-.num{
-  font-family: sans-serif;
-  border-radius: 5px;
-  cursor: deafult;
-  padding: 0.6%;
-  margin-top: 3%;
-  margin-left: 11%;
-  flex-direction: column;
-  display: flex;
-  background-color: white;
-  color: black;
-  width: 15%;
-  border: 3px solid black;
-  background-color: white;
-  text-align: center;
-  text-decoration: none;
-}
-.exerciciosNum{
+#exerciciosFullCont{
   position: absolute;
-  bottom: 80%;
-  left: 30%;
-  font-weight: bolder;
-  font-size: 30px;
-  font-family: inherit;
-  color: black;
+  top: 3em;
+  left: 1em;
+}
+.exerciciosFull{
+  position: relative;
+  display: block;
+  border: none;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  border-radius: 2em;
+  cursor: pointer;
+  margin-top: 1.5em;
+  padding: .35em 1em;
   text-decoration: none;
-  border: solid black;
-  border-radius: 5px;
-  background-color: white;
+  font-weight: bolder;
+  background-color: var(--color);
+  background-image: var(--grad);
+  color: #ffffff;
+  box-shadow: 8px 5px 10px #cccccc;
+  transition: background-color .2s ease, transform .2s ease;
+}
+#exerciciosPartCont{
+  position: absolute;
+  transform: translateX(120%);
+  top: 4em;
+}
+.exerciciosPart{
+  text-decoration: none;
+  width: fit-content;
+  position: relative;
+  font-weight: bolder;
+  font-size: 2em;
+  display: block;
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  padding: .35em 1em;
+  border-radius: 1.5em;
+  background-color: var(--colorB);
+  box-shadow: 8px 5px 10px #cccccc;
+  cursor: pointer;
+  margin-top: 1em;
+}
+#dificuldadeCont{
+  position: absolute;
+  width: fit-content;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.dificuldade{
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: .35em 1em;
+  border-radius: 1.5em;
+  background-color: var(--colorB);
+  width: fit-content;
+  box-shadow: 8px 5px 10px #cccccc;
+  cursor: pointer;
 }
 #pautaCont{
   position: absolute;
@@ -256,8 +316,11 @@ ul.space5{
   top: calc(80% / 12 * 11);
 }
 ul.linha6{
-  top: 100%;
+  top: 79%;
+}ul.linha7{
+  top: 91%;
 }
+
 
 ul.space0,
 ul.space1,
@@ -290,10 +353,10 @@ ul.space5{
 }
 .notas{
   transform: translateY(10%);
-  bottom: 0;
+  bottom: 0%;
 }
 .nota{
-  transform: rotateX(180deg) translateY(10%);
+  transform: rotateX(180deg) translateY(8%);
 }
 .notaCA{
   transform: translate(-50%,10%);
@@ -311,9 +374,9 @@ ul.space5{
 .notaCA4{
   transform: translate(-50%,10%);
   left: 50%;
-  bottom: 0;
+  bottom: -1.2em;
 }
-#notasBtnCont{
+#FigsBtnCont, #notasBtnCont{
   bottom: 1em;
   left: 50%;
   transform: translateX(-50%);
@@ -337,7 +400,7 @@ ul.space5{
   box-shadow: 8px 5px 10px #cccccc;
   color: #ffffff;
 }
-.Claves{
+.ClaveG{
   position: absolute;
   z-index: 8 !important;
   height: 38vw;
@@ -345,9 +408,20 @@ ul.space5{
   left: 0;
   max-height: 19em;
   z-index: 10;
-  transform: translateY(-10%);
+  transform: translateY(-20%);
 }
-#barraCont{
+.ClaveF{
+  position: absolute;
+  z-index: 8 !important;
+  height: 11.5vw;
+  width: auto;
+  left: 2em;
+  max-height: 10em;
+  min-height: 10em;
+  z-index: 10;
+  transform: translateY(0%);
+}
+#FigRWCont, #barraCont{
   position: absolute;
   width: calc(100% - 4em);
   left: 2em;
@@ -357,6 +431,12 @@ ul.space5{
   height: 1em;
   background-color: #ffffff;
   box-shadow: 8px 5px 10px #cccccc;
+}
+#FigRWCont{
+  width: 20%;
+  transform: translate(100%, -100%);
+  left: 15em;
+  bottom: 5em;
 }
 .barra{
   min-width: .5em;
@@ -382,4 +462,37 @@ ul.space5{
   font-weight: bolder;
   font-size: 2em;
   padding: .35em 1em;
+}
+
+#MemoryCont{
+  position: absolute;
+  width: calc(70% - 4em);
+  left: 50%;
+  top: calc(50% - 1.5em);
+  background-color: #fff;
+  box-shadow: 8px 5px 10px #cccccc;
+  padding: 3em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.figure{
+  height: 25vw;
+  max-height: 12em;
+}
+
+.errou ,.acertou{
+  position: relative;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+.errou{
+  background-color: var(--color2);
+}
+.acertou{
+  background-color: rgb(150, 236, 22);
 }
