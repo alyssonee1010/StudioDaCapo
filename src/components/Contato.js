@@ -18,8 +18,8 @@ function Contato() {
             <h1> E-mails </h1>
               Studio DaCapo <cont> dacapo.studioeloja@gmail.com</cont> <br />
               Alysson <cont>queijos410@gmail.com</cont> <br />
-              Diego  <cont></cont> <br />
-              Luciano <cont></cont> <br />
+              Diego  <cont>diegosenna1993@gmail.com</cont> <br />
+              Luciano <cont>ossunabraza@gmail.com </cont> <br />
             </div>
           </div>
         </Route>

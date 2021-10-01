@@ -1,7 +1,7 @@
 :root{
-  --color: #4400ff;
-  --colorB: #98b6e0;
-  --colorC: #511dde;
+  --color: #0e5ae7a2;
+  --colorB: #98b6e0c9;
+  --colorC: #00FFFF;
   --color2: #ff0044;
  /* --grad: linear-gradient(45deg, #4400ff 0%, #220099 100%);
   --grad2: linear-gradient(45deg, #ff0044 0%, #990022 100%);*/
@@ -10,8 +10,11 @@
 html,body{
   width: 100%;
   height: 100%;
-  background-color: #f1f2f3;
+  background-image: url('./fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 #root{
   height: 100%;
 }
@@ -43,13 +46,18 @@ html,body{
 
 .App-header {
   position: absolute;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.616);
   min-height: 100%;
   width: 5em;
   top: 0;
   box-shadow: 0 0 16px #cccccc;
 }
-
+.fundo{
+  position: absolute;
+  transform: translate(-39%, -5%);
+  left: 0;
+  width: 92em;
+}
 nav{
   z-index: 10;
   padding-top: .5em;
@@ -86,7 +94,7 @@ nav{
 .instrumentosB:hover,
 .btm:hover{
   transform: translate(2px,0);
-  background-color: var(--colorC);
+  background-color: var(--color);
   background-image: var(--grad2);
 }
 .nomeNota:hover{
@@ -123,14 +131,14 @@ main{
   transition: background-color .2s ease, transform .2s ease;
   cursor: pointer;
 }
-#Principais{
+#Principais, #Principais2, #SBA{
   position: absolute;
-  width: calc(100% - 4em);
+  width: fit-content;
   left: 50%;
   top: calc(50% - 1.5em);
-  background-color: #fff;
+  background-color: rgba(218, 218, 248, 0.911);
   box-shadow: 8px 5px 10px #cccccc;
-  padding: 4em;
+  padding: 2.5em;
   box-sizing: border-box;
   border-radius: 1em;
   transform: translate(-50%,-50%);
@@ -138,12 +146,24 @@ main{
   font-family: sans-serif;
   font-weight: bolder;
   font-size: 1em;
-
+  text-align: center;
+}
+#Principais{
+  background-color: rgba(255, 255, 255, 0.911);
+}
+#Principais2{
+  transform: translate(-50%, -30%);
+}
+#SBA{
+  width: 55%;
+  border-radius: 10em;
+  padding: 3em;
+  transform: translate(-50%, -30%);
 }
 h1{
   font-family: sans-serif;
   font-size: 2em;
-  color:var(--colorC)
+  color:var(--color)
 }
 .numeros{
   width: fit-content;
@@ -353,7 +373,7 @@ ul.space5{
 }
 .notas{
   transform: translateY(10%);
-  bottom: 0%;
+  bottom: 30%;
 }
 .nota{
   transform: rotateX(180deg) translateY(8%);
@@ -383,7 +403,7 @@ ul.space5{
   position: absolute;
   width: fit-content;
 }
-.nomeNota{
+.nomeNota, .nomeNota2{
   font-weight: bolder;
   position: relative;
   font-size: 1.25rem;
@@ -399,6 +419,9 @@ ul.space5{
   background-image: var(--grad);
   box-shadow: 8px 5px 10px #cccccc;
   color: #ffffff;
+}
+.nomeNota2{
+  font-size: 0.9rem;
 }
 .ClaveG{
   position: absolute;
@@ -420,6 +443,17 @@ ul.space5{
   min-height: 10em;
   z-index: 10;
   transform: translateY(0%);
+}
+.ClaveR{
+  position: absolute;
+  z-index: 8 !important;
+  height: 6vw;
+  width: auto;
+  left: 2em;
+  max-height: 6em;
+  min-height: 6em;
+  z-index: 10;
+  transform: translateY(45%);
 }
 #FigRWCont, #barraCont{
   position: absolute;
@@ -495,4 +529,149 @@ ul.space5{
 }
 .acertou{
   background-color: rgb(150, 236, 22);
+}
+.MVV{
+  font-weight: normal;
+}
+.titulo{
+  font-weight: bolder;
+  top: 2em;
+}
+.sba{
+  position: absolute;
+  transform: translate(50%, -30%);
+  font-weight: bold;
+}
+.PeV{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: rgba(0, 15, 83, 0.719);
+  box-shadow: 8px 5px 10px #cccccc;
+  border-radius: 1.5em;
+  padding: 0.8em;
+  color: white;
+  top: 1em;
+}
+.SobreAulas{
+  font-weight: normal;
+  text-align: justify;
+}
+.PlanoDeAula{
+  position: relative;
+  height: 25em;
+  width: auto;
+  left: 7em;
+}
+.Cursos, .Aulas, .AulasMes, .Valores, .Matricula{
+  position: relative;
+  top: 1.5em;
+  box-shadow: 8px 5px 10px #cccccc;
+  border-radius: 2em;
+  padding: 0.8em;
+  text-align: center;
+  width: fit-content;
+  font-weight: normal;
+  background-color: rgba(2, 70, 172, 0.63);
+  font-size: 100%;
+  margin: 1em;
+}
+@media (max-width: 1200px){
+  div{
+    font-size: 100%;
+  }
+  #Principais{
+    font-size: 100%;
+  }
+  .nomeNota{
+    font-size: 1.7em;
+  }
+}
+@media (max-width: 1000px){
+  div{
+    font-size: 90%;
+  }
+  #Principais{
+    font-size: 80%;
+  }
+  .nomeNota{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 800px){
+  div{
+    font-size: 86%;
+  }
+  #Principais{
+    font-size: 86%;
+  }
+  .nomeNota{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 600px){
+  div{
+    font-size: 85%;
+  }
+  #Principais{
+    font-size: 71%;
+  }
+  .nomeNota{
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 500px){
+  div{
+    font-size: 81%;
+  }
+  #Principais{
+    font-size: 67%;
+  }
+  .nomeNota{
+    font-size: 1.6em;
+  }
+}
+@media (max-width: 400px){
+  header{
+    display: none;
+  }
+  div{
+    font-size: 60%;
+  }
+  #Principais{
+    font-size: 80%;
+  }
+  .nomeNota{
+    font-size: 1.5em;
+  }
+}
+@keyframes fade {
+  0% {opacity: 1;}
+  15% {opacity: 1;}
+  30% {opacity: 0;}
+  70% {opacity: 0;}
+  85% {opacity: 1;}
+  100% {opacity: 1;}
+} 
+.teest{
+  position: absolute;
+  width: 20em;
+  transform:translate(-50%, 50%);
+  height: auto;
+  left: 50%;
+}
+.a{
+  height: auto;
+  animation: fade 10s infinite;
+  z-index: 2;
+}
+.b{
+  animation: fade 20s infinite;
+  z-index: 1;
+}
+.c{
+  z-index: 0;
 }
