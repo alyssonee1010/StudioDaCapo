@@ -578,22 +578,24 @@ ul.space5{
 }
 
 @media (max-width: 1200px){
-  div{
+  .btm{
     font-size: 100%;
   }
-  #Principais{
-    font-size: 100%;
+  #Principais, #Principais, #SBA{
+    transform: translate(-50%, -50%);
+    width: 90%;
   }
   .nomeNota{
     font-size: 1.7em;
   }
 }
 @media (max-width: 1000px){
-  div{
-    font-size: 90%;
+  .btm{
+    font-size: 87%;
   }
-  #Principais{
-    font-size: 80%;
+  #Principais, #Principais, #SBA{
+    transform: translate(-50%, -50%);
+    width: 80%;
   }
   .nomeNota{
     font-size: 1.7em;
@@ -601,11 +603,12 @@ ul.space5{
 }
 
 @media (max-width: 800px){
-  div{
+  .btm{
     font-size: 86%;
   }
-  #Principais{
-    font-size: 86%;
+  #Principais, #Principais, #SBA{
+    transform: translate(-50%, -50%);
+    width: 80%;
   }
   .nomeNota{
     font-size: 1.7em;
@@ -613,11 +616,12 @@ ul.space5{
 }
 
 @media (max-width: 600px){
-  div{
+  .btm{
     font-size: 85%;
   }
-  #Principais{
-    font-size: 71%;
+  #Principais, #Principais, #SBA{
+    transform: translate(-50%, -50%);
+    width: 70%;
   }
   .nomeNota{
     font-size: 1.7em;
@@ -625,14 +629,24 @@ ul.space5{
 }
 
 @media (max-width: 500px){
-  div{
+  .btm{
     font-size: 79%;
   }
   #Principais, #Principais, #SBA{
-    font-size: 67%;
+    transform: translate(-50%, -50%);
+    width: 70%;
   }
   .nomeNota{
     font-size: 1.6em;
   }
 }
 
+@media only screen and (hover: none) and (pointer: coarse){
+  #Principais, #Principais, #SBA{
+    transform: translate(-50%, -50%);
+    width: 70%;
+  }
+  .nomeNota{
+    font-size: 1.6em;
+  }
+}
