@@ -626,9 +626,9 @@ ul.space5{
 
 @media (max-width: 500px){
   div{
-    font-size: 81%;
+    font-size: 80%;
   }
-  #Principais{
+  #Principais, #Principais, #SBA{
     font-size: 67%;
   }
   .nomeNota{
