@@ -640,7 +640,8 @@ ul.space5{
   #Principais2{
     transform: rotate(270deg);
     width: fit-content !important;
-    left: -100%;
+    left: -80%;
+    top: 40%;
   }
   .nomeNota{
     font-size: 1.6em;
