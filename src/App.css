@@ -561,11 +561,6 @@ ul.space5{
   text-align: center;
   top: 2em;
 }
-.sba{
-  position: absolute;
-  transform: translate(50%, -30%);
-  font-weight: bold;
-}
 .PeV{
   position: absolute;
   transform: translateX(-50%);
