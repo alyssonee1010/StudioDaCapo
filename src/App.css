@@ -600,6 +600,7 @@ ul.space5{
 }
 .Cursos2{
   background-color: rgba(90, 90, 202, 0.774);
+  font-weight: bold;
 }
 
 @media (max-width: 1200px){
