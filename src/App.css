@@ -666,4 +666,15 @@ ul.space5{
   .nomeNota{
     font-size: 1.6em;
   }
+  #notasBtnCont{
+    font-size: 0.62em;
+  }
+  #barraCont{
+    width: 80%;
+    height: 0.7em;
+  }
+  #winCont{
+    font-size: 0.7em;
+    bottom: 20%;
+  }
 }
