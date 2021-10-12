@@ -6,7 +6,7 @@ function Teoria() {
       <div>
         <Route path='/Teoria' exact component={Teoria}>
           <div id='SBA'> 
-          <div className='titulo sba'> Aulas DaCapo <br /><br /> </div>
+          <div className='titulo sba'>Aulas DaCapo<br /><br /></div>
             <div className='SobreAulas'>
               As aulas são de 50 minutos a 1 hora de duração. Aula individual 
               é dada com professor e Aluno, aula em grupo pode chegar até 3 alunos além do professor.

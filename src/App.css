@@ -557,6 +557,8 @@ ul.space5{
 }
 .titulo{
   font-weight: bolder;
+  align-items: center;
+  text-align: center;
   top: 2em;
 }
 .sba{
