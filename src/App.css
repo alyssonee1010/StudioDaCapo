@@ -155,6 +155,27 @@ main{
 #Principais2{
   transform: translate(-50%, -30%);
 }
+#Principais3{
+  display: none;
+}
+
+.planos1, .planos2{
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  top: calc(50% - 1.5em);
+  display: block;
+}
+.planos1{
+  transform: translate(-90%, -45%);
+}
+.planos2{
+  transform: translate(0%, -59%);
+}
 #SBA{
   width: 55%;
   border-radius: 10em;
@@ -564,7 +585,7 @@ ul.space5{
   width: auto;
   left: 7em;
 }
-.Cursos, .Aulas, .AulasMes, .Valores, .Matricula{
+.Cursos, .Cursos2, .Aulas, .AulasMes, .Valores, .Matricula{
   position: relative;
   top: 1.5em;
   box-shadow: 8px 5px 10px #cccccc;
@@ -577,12 +598,15 @@ ul.space5{
   font-size: 100%;
   margin: 1em;
 }
+.Cursos2{
+  background-color: rgba(90, 90, 202, 0.774);
+}
 
 @media (max-width: 1200px){
   .btm{
     font-size: 100%;
   }
-  #Principais, #Principais, #SBA{
+  #Principais, #SBA{
     transform: translate(-50%, -50%);
     width: 90%;
   }
@@ -594,7 +618,7 @@ ul.space5{
   .btm{
     font-size: 87%;
   }
-  #Principais, #Principais, #SBA{
+  #Principais, #SBA{
     transform: translate(-50%, -50%);
     width: 80%;
   }
@@ -607,7 +631,7 @@ ul.space5{
   .btm{
     font-size: 86%;
   }
-  #Principais, #Principais, #SBA{
+  #Principais, #SBA{
     transform: translate(-50%, -50%);
     width: 80%;
   }
@@ -620,7 +644,7 @@ ul.space5{
   .btm{
     font-size: 85%;
   }
-  #Principais, #Principais, #SBA{
+  #Principais, #SBA{
     transform: translate(-50%, -50%);
     width: 70%;
   }
@@ -638,10 +662,10 @@ ul.space5{
     width: 70%;
   }
   #Principais2{
-    transform: rotate(270deg);
-    width: fit-content !important;
-    left: -80%;
-    top: 40%;
+    display: none;
+  }
+  #Principais3{
+    display: block;
   }
   .nomeNota{
     font-size: 1.6em;
