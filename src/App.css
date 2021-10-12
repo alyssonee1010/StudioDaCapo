@@ -167,7 +167,7 @@ main{
   position: absolute;
   width: fit-content;
   left: 50%;
-  top: 2em;
+  top: calc(10% - 1.5em);
   display: block;
 }
 .planos1{
