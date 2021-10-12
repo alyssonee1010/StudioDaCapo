@@ -660,7 +660,7 @@ ul.space5{
   }
   #Principais, #SBA{
     transform: translate(-50%, -50%);
-    width: 70%;
+    font-size: 0.9em;
   }
   #Principais2{
     display: none;
