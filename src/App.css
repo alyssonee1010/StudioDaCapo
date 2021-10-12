@@ -231,8 +231,7 @@ cont{
 }
 #exerciciosPartCont{
   position: absolute;
-  transform: translateX(120%);
-  top: 4em;
+  transform: translate(10%, 50%);
 }
 .exerciciosPart{
   text-decoration: none;
