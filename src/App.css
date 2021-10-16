@@ -684,4 +684,8 @@ ul.space5{
     left: 40%;
     width: 12vh;
   }
+  .ClaveF{
+    height: 19vw;
+    transform: translateX(-30%);
+  }
 }
