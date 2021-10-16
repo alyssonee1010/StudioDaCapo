@@ -647,6 +647,10 @@ ul.space5{
   .nomeNota{
     font-size: 1.7em;
   }
+  ul.linha0{
+    left: 40%;
+    width: 15vh;
+  }
 }
 
 @media (max-width: 500px){
@@ -676,5 +680,9 @@ ul.space5{
   #winCont{
     font-size: 0.7em;
     bottom: 20%;
+  }
+  ul.linha0{
+    left: 40%;
+    width: 12vh;
   }
 }
