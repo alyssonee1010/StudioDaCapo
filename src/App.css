@@ -651,11 +651,11 @@ ul.space5{
 
 @media (max-width: 500px){
   .btm{
-    font-size: 68%;
+    font-size: 65%;
   }
   #Principais, #SBA{
     transform: translate(-50%, -50%);
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   #Principais2{
     display: none;
