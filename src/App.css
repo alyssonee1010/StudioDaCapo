@@ -467,15 +467,14 @@ ul.space5{
 .ClaveR{
   position: absolute;
   z-index: 8 !important;
-  height: 6vw;
+  max-height: 160px;
+  height: 5.5em;
   width: auto;
   left: 2em;
-  max-height: 6em;
-  min-height: 6em;
   z-index: 10;
-  transform: translateY(45%);
+  transform: translateY(50%);
 }
-#FigRWCont, #barraCont{
+#barraCont{
   position: absolute;
   width: calc(100% - 4em);
   left: 2em;
@@ -487,10 +486,15 @@ ul.space5{
   box-shadow: 8px 5px 10px #cccccc;
 }
 #FigRWCont{
-  width: 20%;
-  transform: translate(100%, -100%);
-  left: 15em;
+  position: absolute;
+  width: max-content;
+  transform: translate(-100%, -100%);
+  left: 50%;
   bottom: 5em;
+  border-radius: 1.5em;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 8px 5px 10px #cccccc;
 }
 .barra{
   min-width: .5em;
@@ -541,8 +545,8 @@ ul.space5{
   position: relative;
   font-family: sans-serif;
   font-weight: bolder;
-  text-align: center;
   color: white;
+  padding: 0.4em;
 }
 .errou{
   background-color: var(--color2);
@@ -608,6 +612,9 @@ ul.space5{
   .nomeNota{
     font-size: 1.7em;
   }
+  #FigsBtnCont{
+    font-size: 0.7em;
+  }
 }
 @media (max-width: 1000px){
   .btm{
@@ -619,6 +626,9 @@ ul.space5{
   }
   .nomeNota{
     font-size: 1.7em;
+  }
+  #FigsBtnCont{
+    font-size: 0.68em;
   }
 }
 
@@ -632,6 +642,9 @@ ul.space5{
   }
   .nomeNota{
     font-size: 1.7em;
+  }
+  #FigsBtnCont{
+    font-size: 0.65em;
   }
 }
 
@@ -649,6 +662,12 @@ ul.space5{
   ul.linha0, ul.linha-1, ul.linha6,  ul.linha7{
     left: 40%;
     width: 15vh;
+  }
+  #FigsBtnCont{
+    font-size: 0.6em;
+  }
+  .ClaveR{
+    height: 4.2em;
   }
 }
 
@@ -687,5 +706,14 @@ ul.space5{
   .ClaveF{
     height: 19vw;
     transform: translateX(-30%);
+  }
+  .notaCA4{
+    bottom: -0.5em;
+  }
+  #FigsBtnCont{
+    font-size: 0.5em;
+  }
+  .ClaveR{
+    height: 3.7em;
   }
 }

@@ -52,7 +52,7 @@ let win = localStorage.getItem('win') ? JSON.parse(localStorage.getItem('win')) 
 function E1 () {
   const [appearing, setAppering] = useState(
   {
-    seminima: Number,
+    seminima: Number
   })
 
   const exercicio = (n) => {
