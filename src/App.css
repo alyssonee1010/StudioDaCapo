@@ -190,16 +190,16 @@ h1{
 .numeros{
   width: fit-content;
   position: relative;
+  right: 0em;
 }
 cont{
-  left: 5em;
   display: block;
   color: var(--color);
 }
 .email{
   position: relative;
   width: fit-content;
-  left: 2em;
+  right: 0em;
 }
 .instru{
   font-family: sans-serif;
@@ -605,10 +605,6 @@ ul.space5{
   .btm{
     font-size: 100%;
   }
-  #Principais, #SBA{
-    transform: translate(-50%, -50%);
-    width: 90%;
-  }
   .nomeNota{
     font-size: 1.7em;
   }
@@ -619,10 +615,6 @@ ul.space5{
 @media (max-width: 1000px){
   .btm{
     font-size: 87%;
-  }
-  #Principais, #SBA{
-    transform: translate(-50%, -50%);
-    width: 80%;
   }
   .nomeNota{
     font-size: 1.7em;
@@ -636,10 +628,6 @@ ul.space5{
   .btm{
     font-size: 86%;
   }
-  #Principais, #SBA{
-    transform: translate(-50%, -50%);
-    width: 80%;
-  }
   .nomeNota{
     font-size: 1.7em;
   }
@@ -651,10 +639,6 @@ ul.space5{
 @media (max-width: 600px){
   .btm{
     font-size: 85%;
-  }
-  #Principais, #SBA{
-    transform: translate(-50%, -50%);
-    width: 70%;
   }
   .nomeNota{
     font-size: 1.7em;
@@ -677,7 +661,7 @@ ul.space5{
   }
   #Principais, #SBA{
     transform: translate(-50%, -50%);
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
   #Principais2{
     display: none;
