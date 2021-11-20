@@ -672,7 +672,7 @@ ul.space5{
     font-size: 1.7em;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -80%);
     font-size: 0.65em;
   }
   #tituloBotao{
@@ -691,7 +691,7 @@ ul.space5{
     font-size: 1.7em;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -80%);
     font-size: 0.55em;
   }
   #tituloBotao{
@@ -714,7 +714,7 @@ ul.space5{
     font-size: 65%;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -80%);
     font-size: 0.45em;
   }
   #tituloBotao{
