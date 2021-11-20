@@ -671,6 +671,13 @@ ul.space5{
   .nomeNota{
     font-size: 1.7em;
   }
+  #Principais, #SBA{
+    transform: translate(-50%, -60%);
+    font-size: 0.65em;
+  }
+  #tituloBotao{
+    font-size: 0.5em;
+  }
   #FigsBtnCont{
     font-size: 0.65em;
   }
@@ -682,6 +689,13 @@ ul.space5{
   }
   .nomeNota{
     font-size: 1.7em;
+  }
+  #Principais, #SBA{
+    transform: translate(-50%, -60%);
+    font-size: 0.55em;
+  }
+  #tituloBotao{
+    font-size: 0.5em;
   }
   ul.linha0, ul.linha-1, ul.linha6,  ul.linha7{
     left: 40%;
@@ -700,8 +714,14 @@ ul.space5{
     font-size: 65%;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -100%);
-    font-size: 0.5em;
+    transform: translate(-50%, -60%);
+    font-size: 0.45em;
+  }
+  #tituloBotao{
+    font-size: 0.4em;
+  }
+  #SBA{
+
   }
   #Principais2{
     display: none;
