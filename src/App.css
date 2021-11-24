@@ -523,10 +523,10 @@ ul.space5{
 
 #MemoryCont{
   position: absolute;
-  width: calc(70% - 4em);
+  width: fit-content;
   left: 50%;
   top: calc(50% - 1.5em);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.801);
   box-shadow: 8px 5px 10px #cccccc;
   padding: 3em;
   box-sizing: border-box;
@@ -537,8 +537,8 @@ ul.space5{
 
 .figure{
   position: relative;
-  height: 25vw;
-  max-height: 12em;
+  height: 8em;
+  max-height: 8em;
 }
 
 .errou ,.acertou{
@@ -769,16 +769,10 @@ ul.space5{
     height: 3.25em;
     left: -0.5em;
   }
-  .figure{
-    transform: translateX(-50%);
-  }
 }
 @media (max-width: 430px){
   .ClaveR{
     left: -1em;
     height: 2.9em;
-  }
-  .figure{
-    transform: translateX(-100%);
   }
 }
