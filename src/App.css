@@ -478,7 +478,7 @@ ul.space5{
   position: absolute;
   width: calc(100% - 4em);
   left: 2em;
-  bottom: 5em;
+  bottom: 6em;
   border-radius: 1.5em;
   overflow: hidden;
   height: 1em;
@@ -509,10 +509,9 @@ ul.space5{
   width: fit-content;
   border-radius: 2em;
   background-color: #7FFF00;
-  bottom: 7em;
   align-content: center;
   box-sizing: border-box;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   left: 50%;
 }
 .win{
@@ -766,6 +765,16 @@ ul.space5{
     font-size: 0.5em;
   }
   .ClaveR{
-    height: 3.4em;
+    height: 3.25em;
+    left: -0.5em;
+  }
+}
+@media (max-width: 430px){
+  .ClaveR{
+    left: -1em;
+    height: 2.9em;
+  }
+  #notasBtnCont{
+  
   }
 }
