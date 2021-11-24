@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route }from 'react-router-dom';
 import { useState } from 'react';
 
-import semibreve from './figures/semibreve.png';
+import semibreve from './figures/semibreve.jpg';
 import minima from './figures/minima.png';
 import seminima from './figures/seminima.png';
 import colcheia1 from './figures/colcheia1.png';

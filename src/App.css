@@ -488,7 +488,7 @@ ul.space5{
 #FigRWCont{
   position: absolute;
   width: max-content;
-  transform: translate(-100%, -100%);
+  transform: translate(-50%, -100%);
   left: 50%;
   bottom: 5em;
   border-radius: 1.5em;
@@ -536,6 +536,7 @@ ul.space5{
 }
 
 .figure{
+  position: relative;
   height: 25vw;
   max-height: 12em;
 }
@@ -768,13 +769,16 @@ ul.space5{
     height: 3.25em;
     left: -0.5em;
   }
+  .figure{
+    transform: translateX(-50%);
+  }
 }
 @media (max-width: 430px){
   .ClaveR{
     left: -1em;
     height: 2.9em;
   }
-  #notasBtnCont{
-  
+  .figure{
+    transform: translateX(-100%);
   }
 }
