@@ -134,7 +134,8 @@ main{
 }
 #Principais, #Principais2, #SBA{
   position: absolute;
-  width: fit-content;
+  width: 60%;
+  height: fit-content;
   left: 50%;
   top: calc(50% - 1.5em);
   background-color: rgba(218, 218, 248, 0.911);
@@ -150,9 +151,11 @@ main{
   text-align: center;
 }
 #Principais{
+  width: fit-content;
   background-color: rgba(255, 255, 255, 0.911);
 }
 #Principais2{
+  width: fit-content;
   transform: translate(-50%, -30%);
 }
 #Principais3{
@@ -672,8 +675,8 @@ ul.space5{
     font-size: 1.7em;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -80%);
-    font-size: 0.65em;
+    transform: translate(-50%, -50%);
+    width: 80%;
   }
   #tituloBotao{
     font-size: 0.5em;
@@ -699,8 +702,7 @@ ul.space5{
     font-size: 1.7em;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -80%);
-    font-size: 0.55em;
+    transform: translate(-50%, -50%);
   }
   #tituloBotao{
     font-size: 0.5em;
@@ -715,27 +717,40 @@ ul.space5{
   .ClaveR{
     height: 3.7em;
   }
+  .numeros, .email{
+    position: relative;
+    left: -1em;
+    font-size: 0.85em;
+  }
 }
 
 @media (max-width: 500px){
+  .planos1{
+    transform: translate(-100%, -30%);
+  }
+  .planos2{
+    transform: translate(0%, -40%);
+  }
   .btm{
     font-size: 65%;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -80%);
-    font-size: 0.45em;
+    transform: translate(-50%, -50%);
+    font-size: 0.9em;
   }
   #tituloBotao{
     font-size: 0.4em;
-  }
-  #SBA{
-
   }
   #Principais2{
     display: none;
   }
   #Principais3{
     display: block;
+  }
+  .numeros, .email{
+    position: relative;
+    left: -1em;
+    font-size: 0.8em;
   }
   .nomeNota{
     font-size: 1.6em;
