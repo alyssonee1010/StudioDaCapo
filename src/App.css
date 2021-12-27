@@ -677,12 +677,11 @@ ul.space5{
     font-size: 1.7em;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 80%;
-    top: 75%;
   }
   #tituloBotao{
-    font-size: 0.5em;
+    font-size: 0.8em;
   }
   #FigsBtnCont{
     font-size: 0.65em;
@@ -705,10 +704,10 @@ ul.space5{
     font-size: 1.7em;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
   #tituloBotao{
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
   ul.linha0, ul.linha-1, ul.linha6,  ul.linha7{
     left: 40%;
@@ -738,11 +737,11 @@ ul.space5{
     font-size: 65%;
   }
   #Principais, #SBA{
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     font-size: 0.9em;
   }
   #tituloBotao{
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
   #Principais2{
     display: none;
