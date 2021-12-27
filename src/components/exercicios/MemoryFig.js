@@ -64,13 +64,13 @@ const MemoryFig = () => {
                 <figure>{appearing.figure == 6 ? Fsemifusa1 : ""}</figure>
             </div>
             <div id="FigsBtnCont">
-            <button className='nomeNota' onClick={()=>exercicio(4)}>Semicolcheia</button>
-            <button className='nomeNota' onClick={()=>exercicio(3)}>Colcheia</button>
-            <button className='nomeNota' onClick={()=>exercicio(2)}>Seminima</button>
-            <button className='nomeNota' onClick={()=>exercicio(1)}>Minima</button>
-            <button className='nomeNota' onClick={()=>exercicio(0)}>Semibreve</button>
-            <button className='nomeNota' onClick={()=>exercicio(5)}>Fusa</button>
-            <button className='nomeNota' onClick={()=>exercicio(6)}>Semifusa</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(4)}>Semicolcheia</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(3)}>Colcheia</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(2)}>Seminima</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(1)}>Minima</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(0)}>Semibreve</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(5)}>Fusa</button>
+            <button className='nomeNota' type="button" onClick={()=>exercicio(6)}>Semifusa</button>
           </div>
           <div id='FigRWCont'>
               <div className={win ? 'acertou' : "errou"}> Você {win ? 'acertou' : "errou"} </div>

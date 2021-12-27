@@ -94,15 +94,15 @@ function E3 () {
           </div>
         </div>
           <div id="notasBtnCont">
-            <button className='nomeNota2' onClick={()=>exercicio(5)}>Caixa</button>
-            <button className='nomeNota2' onClick={()=>exercicio(7)}>Bumbo</button>
-            <button className='nomeNota2' onClick={()=>exercicio(3)}>Ton 1</button>
-            <button className='nomeNota2' onClick={()=>exercicio(4)}>Ton 2</button>
-            <button className='nomeNota2' onClick={()=>exercicio(6)}>Surdo</button>
-            <button className='nomeNota2' onClick={()=>exercicio(0)}>Prato de Ataque</button>
-            <button className='nomeNota2' onClick={()=>exercicio(1)}>Chimbal</button>
-            <button className='nomeNota2' onClick={()=>exercicio(8)}>Chimbal com pé</button>
-            <button className='nomeNota2' onClick={()=>exercicio(2)}>Prato de condução</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(5)}>Caixa</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(7)}>Bumbo</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(3)}>Ton 1</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(4)}>Ton 2</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(6)}>Surdo</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(0)}>Prato de Ataque</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(1)}>Chimbal</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(8)}>Chimbal com pé</button>
+            <button className='nomeNota2' type="button" onClick={()=>exercicio(2)}>Prato de condução</button>
           </div>
           <div id="barraCont">
             <div className='barra' style={{width: porcentagem}}></div>

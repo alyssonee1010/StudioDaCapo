@@ -150,13 +150,13 @@ function E1 () {
           </div>
         </div>
           <div id="notasBtnCont">
-            <button className='nomeNota' onClick={()=>exercicio(4)}>Do</button>
-            <button className='nomeNota' onClick={()=>exercicio(3)}>Ré</button>
-            <button className='nomeNota' onClick={()=>exercicio(2)}>Mi</button>
-            <button className='nomeNota' onClick={()=>exercicio(1)}>Fa</button>
-            <button className='nomeNota' onClick={()=>exercicio(7)}>Sol</button>
-            <button className='nomeNota' onClick={()=>exercicio(6)}>La</button>
-            <button className='nomeNota' onClick={()=>exercicio(5)}>Si</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(4)}>Do</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(3)}>Ré</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(2)}>Mi</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(1)}>Fa</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(7)}>Sol</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(6)}>La</button>
+            <button type="button" className='nomeNota' onClick={()=>exercicio(5)}>Si</button>
           </div>
           <div id="barraCont">
             <div className='barra' style={{width: porcentagem}}></div>
