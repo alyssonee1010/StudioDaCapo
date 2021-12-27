@@ -21,11 +21,11 @@ function App() {
             <p className="App"> Studio DaCapo </p>
           </header> 
           <nav>
-            <a className = "btm" href='/Teoria'> Aulas </a>
-            <a className = "btm" href='/plans'> Planos </a>
-            <a className = "btm" href='/Exercicios'> Exercícios </a>
-            <a className = "btm" href='/contact' > Contato </a>
-            <a className = "btm" href='/about'> Sobre </a>
+            <a className = "btm" type="button" href='/Teoria'> Aulas </a>
+            <a className = "btm" type="button" href='/plans'> Planos </a>
+            <a className = "btm" type="button" href='/Exercicios'> Exercícios </a>
+            <a className = "btm" type="button" href='/contact' > Contato </a>
+            <a className = "btm" type="button"href='/about'> Sobre </a>
           </nav>
         </>
       )}/>
