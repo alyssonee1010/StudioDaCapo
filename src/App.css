@@ -516,6 +516,7 @@ ul.space5{
   box-sizing: border-box;
   transform: translate(-50%, -50%);
   left: 50%;
+  bottom: 20%;
 }
 .win{
   font-family: sans-serif;
