@@ -10,7 +10,7 @@ function Contato() {
             <div className='numeros'>
              <h1> Números </h1>
               Studio DaCapo <cont> 67 99191-9080 </cont> <br />
-              Alysson (WPP) <cont> 11 95885-0243 </cont><br />
+              Alysson (WPP) <cont> 67 98215-6633 </cont><br />
               Diego <cont> 67 99969-3300 </cont><br />
               Luciano <cont> 67 99904-4358 </cont><br />
             </div>
